@@ -1,0 +1,22 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+
+.navBarStyle {
+    background-color: white;
+    font-family:'Castoro Titling', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.ButtonSyle {
+    margin: 3px;
+    color: black;
+    background-color: rgb(225, 233, 232);
+    text-decoration-line: none;
+    font-size: 20px;
+    border-radius: 3px;
+    border-inline: none;
+    }
