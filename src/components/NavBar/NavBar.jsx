@@ -1,6 +1,7 @@
 import CardWidget from "../CardWidget/CardWidget"
-import logo from './logo_floristería_femenino_rosa-removebg-preview (1).png'
+import logo from './logo.png'
 import "./NavBar.css"
+import {} from "react-bootstrap"
 
 
 
@@ -26,6 +27,7 @@ const NavBar = () => {
             
             </div>
             <CardWidget />
+            
         </nav>
 
 
