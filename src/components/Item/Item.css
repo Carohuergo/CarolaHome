@@ -1,4 +1,4 @@
-.agregarCarritoBoton {
+ .verDetalleBoton {
     text-decoration: none;
     background-color:rgb(166, 191, 204);
     color: white;
@@ -8,7 +8,7 @@
     transition: .2s;
 }
 
-.agregarCarritoBoton:hover {
+.verDetalleBoton:hover {
     background-color: rgb(4, 12, 99);
     color: white;
 }

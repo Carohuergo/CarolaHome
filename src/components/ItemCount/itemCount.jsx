@@ -1,31 +1,40 @@
-// import { Button } from "react-bootstrap";
-// import Card from "react-bootstrap/Card";
-import sillonCalma from "./sillonCalma.jpg";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import {} from "./ItemCount.css"
 
-function ItemCount() {
+const ItemCount = ({ stock, initial, onAdd }) => {
+  const [quantity, setQuantity] = useState(initial)
+
+  const increment = () => {
+    if (quantity < stock) {
+      setQuantity(quantity + 1)
+    }
+  }
+
+  const decrement = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1)
+    }
+  }
+
+
   return (
-    // <Card style={{ width: '18rem' }}>
-    //   <Card.Img variant="top" src="./sillonCalma.jpg" />
-    //   <Card.Body>
-    //     <Card.Title>Sillon Calma</Card.Title>
-    //     <Card.Text>
-    //       Sillon de tres cuerpos con funda de tussor a eleccion.
-    //     </Card.Text>
-    //     <Button variant="primary">Agregar al carrito</Button>
-    //   </Card.Body>
-    // </Card>
-    <div className="card" style={{ width: "18rem", margin: 30 }}>
-      <img src={sillonCalma} className="card-img-top" alt="sillon" />
-      <div className="card-body">
-        <h5 className="card-title">Sillon Calma</h5>
-        <p className="card-text">
-          Sillon de tres cuerpos con funda de tussor a eleccion.
-        </p>
-        <a href="#" className="btn btn-primary">
-          Agregar al carrito
-        </a>
-      </div>
+    
+    <div>
+          <Container>
+            <Row>
+              <Col><Button variant="btn-sm" onClick={decrement}> - </Button></Col>
+              <Col><h3> {quantity}</h3></Col>
+              <Col><Button variant="btn-sm" onClick={increment}> + </Button></Col>
+            </Row>
+          </Container>
+          <Link className="agregarCarritoBoton" variant="primary" onClick={() => onAdd(quantity)} disabled={!stock}> Agregar al carrito</Link>
+
     </div>
+          
+   
+    
   );
 }
 

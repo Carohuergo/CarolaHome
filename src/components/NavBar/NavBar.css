@@ -7,16 +7,50 @@
     font-family:'Castoro Titling', cursive;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items:flex-start;
+    justify-content:center;
+    align-content:center;
+    height: auto;
+   
+    
 }
 
-.ButtonSyle {
+.ButtonStyle {
     margin: 3px;
     color: black;
-    background-color: rgb(225, 233, 232);
+    background-color: rgb(250, 253, 252);
     text-decoration-line: none;
     font-size: 20px;
     border-radius: 3px;
     border-inline: none;
+  
+    }
+    .buttonLala{
+      color: white;
+      background-color: black;
+      margin: 3px;
+      text-decoration-line: none;
+      font-size: 20px;
+      border-radius: 3px;
+      border-inline: none;
+    }
+
+    .logoStyle {
+      height: 300px;
+      width: 300px;
+    }
+
+    
+    
+    @media (max-width: 850px) {
+      .navBarStyle {
+        font-size: 10px;
+      }
+      .ButtonStyle {
+        font-size: 10px;
+        border-radius: 1px ;
+      }
+      .logoStyle {
+        height: 200px;
+        width: 200px;
+      }
     }

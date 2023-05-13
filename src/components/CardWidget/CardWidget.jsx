@@ -1,11 +1,15 @@
 import cart from "./assets/shopping-cart-svgrepo-com (3).svg"
 
+
 const CardWidget = () => {
     return (
-        <div>
-        <img src={cart} alt="cart-widget" style={{height:50, width:50}} />
+        
+        <>
+        <img src={cart} alt="cart-widget" style={{height:30, width:30}} />
         0
-        </div>
+        </>
+        
+        
     )
 }
 
