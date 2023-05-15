@@ -4,8 +4,8 @@ import ItemCount from "../ItemCount/itemCount";
 const ItemDetail = ({name, descrip,precio, img}) => {
     return (
       
-        <div>
-        <Card style={{ width: '20rem', fontFamily: 'Castoro Titling' }} className="text-center">
+        <div style={{marginBottom:40}}>
+        <Card style={{ width: '20rem', fontFamily: 'Castoro Titling'}} className="text-center">
         <Card.Img variant="top" src={img} style={{objectFit:"contain"}}/>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
