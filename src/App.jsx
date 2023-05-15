@@ -5,6 +5,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainter
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
+import { Footer } from './components/Footer/Footer';
 
 
 
@@ -15,8 +16,6 @@ function App() {
     
       <NavBar />
       
-      
-      
       <Routes>
 
         <Route path='/' element={<ItemListContainer greeting={"Bienvenidos a Carola's Home"} />}/>
@@ -25,7 +24,8 @@ function App() {
         <Route path='/productos/:category' element={<ItemListContainer />} />
         
       </Routes>
-
+      
+      <Footer />
 
     </BrowserRouter>
   );

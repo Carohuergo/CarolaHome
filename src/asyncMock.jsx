@@ -1,4 +1,9 @@
-
+import imagen1 from "./images/sillonCalmaPic.webp"
+import imagen2 from "./images/lamparaTai.webp"
+import imagen3 from "./images/escritorioNube.webp"
+import imagen4 from "./images/sillonHilo.webp";
+import imagen5 from "./images/mesaBig.webp"
+import imagen6 from "./images/veladorPared.webp"
 
 const products =[
     {
@@ -6,7 +11,7 @@ const products =[
         name: "Sillon Calma",
         precio: "60.000",
         category:"sillones",
-        img:"https://picsum.photos/200?random=1",
+        img:imagen1,
         stock: 10,
         descrip: "Sillon de tres cuerpos con funda de tussor a eleccion",
         scrLink: "",
@@ -17,29 +22,29 @@ const products =[
         name: "Lampara tai",
         precio: "15.000",
         category:"iluminacion",
-        img:"https://picsum.photos/200?random=2",
+        img:imagen2,
         stock: 10,
         descrip: "Lampara de pie con soporte de metal",
         scrLink: "",
     },
     {
         id: "3",
-        name: "Mesa nube",
+        name: "Escritorio nube",
         precio: "56.000",
         category:"muebles",
-        img:"https://picsum.photos/200?random=3",
+        img: imagen3,
         stock: 10,
         descrip: "Mesa escritorio de petirini enchapado",
         scrLink: "",
     },
     {
         id: "4",
-        name: "Sillon Family",
+        name: "Sillon Hilo Kraft",
         precio: "150.000",
         category:"sillones",
-        img:"https://picsum.photos/200?random=4",
+        img: imagen4,
         stock: 10,
-        descrip: "Sillon en L con funda de tussor a eleccion.",
+        descrip: "Sillon individual petiribi tejido papel kraft, hilo kraft",
         scrLink: "",
     },
     {
@@ -47,19 +52,19 @@ const products =[
         name: "Mesa Big Family",
         precio: "180.000",
         category:"muebles",
-        img:"https://picsum.photos/200?random=5",
+        img: imagen5,
         stock: 10,
         descrip: "Mesa de petiribi macizo de 2x1.",
         scrLink: "",
     },
     {
         id: "6",
-        name: "Velador Profundo",
+        name: "Velador Caliz",
         precio: "9.000",
         category:"iluminacion",
-        img:"https://picsum.photos/200?random=6",
+        img: imagen6,
         stock: 10,
-        descrip: "Velador de pared de hierro funido.",
+        descrip: "Aplique con brazo y pantalla de mimbre",
         scrLink: "",
     }
 

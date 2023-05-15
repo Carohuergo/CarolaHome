@@ -8,7 +8,7 @@ export const Item = ({id, name, img, precio, category}) => {
     return (
         <div>
         <Card style={{ width: '18rem', margin: 40, fontFamily: 'Castoro Titling' }} className="text-center">
-        <Card.Img variant="top" src={img} style={{height:300}}/>
+        <Card.Img variant="top" src={img} style={{ objectFit:"contain"}}/>
         <Card.Body>
           <Card.Title>{name}</Card.Title>
           <Container>

@@ -1,6 +1,6 @@
 import { Container, Nav, NavDropdown, NavLink, Navbar, Row } from "react-bootstrap";
 import CardWidget from "../CardWidget/CardWidget"
-import logo from './ch.png'
+import logo from './ch (1).png'
 import "./NavBar.css"
 import { Link } from "react-router-dom";
 
