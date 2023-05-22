@@ -29,8 +29,8 @@ export const Footer = ()=> {
             </div>
           </Row>
           </Container>
-        <div class="footer-copyright">
-          <div class="container">
+        <div className="footer-copyright">
+          <div className="container">
           © Copyright 2023 - Desarrollado por Carolina Huergo
           </div>
           </div>

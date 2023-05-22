@@ -1,7 +1,21 @@
 import { Card, Container, Row } from "react-bootstrap";
 import ItemCount from "../ItemCount/itemCount";
+import { CartContext} from "../../context/CartContext"
+import { useContext, useState } from "react";
 
-const ItemDetail = ({name, descrip,precio, img}) => {
+const ItemDetail = ({name, id, descrip,precio, img}) => {
+   const [quantityAdded, setQuantityAdded]= useState (0)
+   const {addItem} = useContext(CartContext)
+
+   const handleOnAdd =(quantity) => {
+    setQuantityAdded(quantity)
+
+    const item ={
+      id,name,precio
+    }
+    addItem(item, quantity)
+  }
+  
     return (
       
         <div style={{marginBottom:40}}>
@@ -17,7 +31,7 @@ const ItemDetail = ({name, descrip,precio, img}) => {
               <p> Precio: ${precio}</p>
             </Row>
           </Container>
-          <ItemCount initial={1} stock={10} onAdd={(quantity)=> console.log ("cantidad agregada ", quantity)}/>
+          <ItemCount initial={1} stock={10} handleOnAdd={handleOnAdd} quantityAdded={quantityAdded}/>
           
         </Card.Body>
       </Card>

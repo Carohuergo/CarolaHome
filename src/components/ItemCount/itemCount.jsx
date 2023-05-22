@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import {} from "./ItemCount.css"
 
-const ItemCount = ({ stock, initial, onAdd }) => {
+const ItemCount = ({ stock, initial, handleOnAdd }) => {
   const [quantity, setQuantity] = useState(initial)
 
   const increment = () => {
@@ -29,7 +29,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
               <Col><Button variant="btn-sm" onClick={increment}> + </Button></Col>
             </Row>
           </Container>
-          <Link className="agregarCarritoBoton" variant="primary" onClick={() => onAdd(quantity)} disabled={!stock}> Agregar al carrito</Link>
+          <Link className="agregarCarritoBoton" variant="primary" onClick={handleOnAdd} disabled={!stock}> Agregar al carrito</Link>
 
     </div>
           
