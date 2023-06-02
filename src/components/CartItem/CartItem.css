@@ -1,0 +1,19 @@
+.cartItemImglink {
+    flex-shrink: 0;
+    height: auto;
+    margin-right: 0.5rem;
+    max-width: 60px;
+    text-align: center;
+}
+
+.rowStyle{
+    display: flex;
+    align-items: center;
+   
+}
+
+.cartStyle{
+    width: 18rem;
+     margin:1rem;
+     font-family: 'Castoro Titling';
+}

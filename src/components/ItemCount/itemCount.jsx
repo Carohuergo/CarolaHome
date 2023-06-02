@@ -29,7 +29,7 @@ const ItemCount = ({ stock, initial, handleOnAdd }) => {
               <Col><Button variant="btn-sm" onClick={increment}> + </Button></Col>
             </Row>
           </Container>
-          <Link className="agregarCarritoBoton" variant="primary" onClick={()=>handleOnAdd(quantity)}  disabled={!stock}> Agregar al carrito</Link>
+          <Link to="/cart" className="agregarCarritoBoton" variant="primary" onClick={()=>handleOnAdd(quantity)}  disabled={!stock}> Agregar al carrito</Link>
 
     </div>
           

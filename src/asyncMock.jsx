@@ -9,7 +9,7 @@ const products =[
     {
         id: "1",
         name: "Sillon Calma",
-        precio: "60.000",
+        precio: 60000,
         category:"sillones",
         img:imagen1,
         stock: 10,
@@ -20,7 +20,7 @@ const products =[
     {
         id: "2",
         name: "Lampara tai",
-        precio: "15.000",
+        precio: 15000,
         category:"iluminacion",
         img:imagen2,
         stock: 10,
@@ -30,7 +30,7 @@ const products =[
     {
         id: "3",
         name: "Escritorio nube",
-        precio: "56.000",
+        precio: 56000,
         category:"muebles",
         img: imagen3,
         stock: 10,
@@ -40,17 +40,17 @@ const products =[
     {
         id: "4",
         name: "Sillon Hilo Kraft",
-        precio: "150.000",
+        precio: 150000,
         category:"sillones",
         img: imagen4,
         stock: 10,
-        descrip: "Sillon individual petiribi tejido papel kraft, hilo kraft",
+        descrip: "Sillon individual petiribi tejido papel kraft",
         scrLink: "",
     },
     {
         id: "5",
         name: "Mesa Big Family",
-        precio: "180.000",
+        precio: 180000,
         category:"muebles",
         img: imagen5,
         stock: 10,
@@ -60,7 +60,7 @@ const products =[
     {
         id: "6",
         name: "Velador Caliz",
-        precio: "9.000",
+        precio: 9000,
         category:"iluminacion",
         img: imagen6,
         stock: 10,

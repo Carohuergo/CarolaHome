@@ -17,7 +17,7 @@ export const Item = ({id, name, img, precio, category}) => {
               <p> Categoria: {category}</p>
             </Row>
           </Container>
-          <Link className="verDetalleBoton" to={`/item/${id}`}> ver detalle </Link>
+          <Link className="verDetalleBoton" to={`/item/${id}`}> Ver detalle </Link>
         </Card.Body>
       </Card>
         </div>

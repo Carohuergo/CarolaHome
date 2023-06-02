@@ -1,0 +1,54 @@
+.CartStyle{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tituloStyle {
+    font-family:'Rubik', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.totalCompraStyle {
+    background-color: #f9f9f9;;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+
+
+}
+
+.buttonFinalizar{
+    text-decoration: none;
+    color: black;
+}
+.buttonFinalizar:hover{
+    color: white;
+}
+
+.BotonesCart{
+    margin-left: 1rem;
+    border: black ;
+}
+
+                
+.buttonProductos{
+    text-decoration: none;
+    color: white;
+    margin-top: 2rem;
+}
+.buttonProductos:hover{
+    color: white;
+    
+}
+.carritoSinProducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}

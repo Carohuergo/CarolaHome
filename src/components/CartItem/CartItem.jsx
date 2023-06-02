@@ -1,19 +1,32 @@
-import { Card, Container, Row } from "react-bootstrap";
-import {} from "../Item/Item.css"
+import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import "./CartItem.css"
+import { CartContext } from "../../context/CartContext";
+import { useContext } from "react";
 
 
-export const CartItem = ({ name, precio, quantity }) => {
+
+export const CartItem = ({ id, name, precio, quantity,img}) => {
+    const {removeItem} =useContext(CartContext)
 
 
     return (
         <div>
-            <Card style={{ width: '18rem', margin: 40, fontFamily: 'Castoro Titling' }} className="text-center">
+            <Card className="cartStyle">
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>
                     <Container>
-                        <Row>
-                            <p> Precio: ${precio}</p>
-                            <p> Cantidad: {quantity}</p>
+                        <Row className="rowStyle">
+                            <Col>
+                                <Card.Img variant="top" src={img} />
+                            </Col>
+                            <Col>
+                                <Row >
+                                    <p> Total: ${(precio*quantity)}</p>
+                                    <p> Cantidad: {quantity}</p>
+                                    <Button variant="light" size="sm" className="buttonRemover" onClick={() => removeItem(id)}>Eliminar</Button>
+                                </Row>
+                            </Col>
+                            
                         </Row>
                     </Container>
                 </Card.Body>
@@ -21,4 +34,9 @@ export const CartItem = ({ name, precio, quantity }) => {
         </div>
 
 
-    )}
+
+
+
+
+    )
+}

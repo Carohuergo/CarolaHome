@@ -8,9 +8,9 @@ const CardWidget = () => {
     const {totalQuantity} = useContext(CartContext)
     return (
         
-        <Link to="/cart">
+        <Link to="/cart" style={{textDecoration:"none", color:"black", displey: totalQuantity() > 0 ? "block" : "none"}} >
         <img src={cart} alt="cart-widget" style={{height:30, width:30}} />
-        {totalQuantity}
+        {totalQuantity()}
     
         </Link>
         

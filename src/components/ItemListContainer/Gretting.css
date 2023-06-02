@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 
 .SaludoSyle {
-font-family: 'Castoro Titling';
+font-family:'Courier New', Courier, monospace;
+font-weight:100;
 text-align: center;
 color: rgb(57, 72, 88);
 
