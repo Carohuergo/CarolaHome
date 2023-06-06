@@ -22,14 +22,14 @@ export const Cart = () => {
 
     return (
         <>
-            <h1 className="tituloStyle">Shopping Cart </h1>
+            <h1 className="tituloStyle">Carrito de compra </h1>
             <div className="CartStyle">
                 {cart.map(p => <CartItem key={p.id} {...p} />)}
             </div>
             <div className="totalCompraStyle">
-                <p>Precio final: $ {total()}</p>
+                <p>Total compra : $ {total()}</p>
                 <p>Cantidad total de productos: {totalQuantity()}</p>
-                <Button variant="outline-dark" className="BotonesCart" onClick={() => clearCart()}>Limpiar Carrito</Button>
+                <Button variant="outline-dark" className="BotonesCart" onClick={() => clearCart()}>Vaciar Carrito</Button>
                 <Button variant="outline-dark" className="BotonesCart">
                 <Link className="buttonFinalizar" to="/checkout">Finalizar Compra</Link>
                 </Button>

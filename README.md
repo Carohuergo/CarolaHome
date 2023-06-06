@@ -1,3 +1,11 @@
+# CAROLA HOME 
+Este es un proyecto fictisio que cree con datos propios para imitar un ecommerce de una marca de muebles y decoracion de casa. Se eligio estilos acordes al rubro para dar una sensacion de calidez y acogedora. El usuario puede navegar por diferentes categorias, ver especificaciones del producto y agregarlos a un carrito para su posterior compra.
+
+## react-bootstrap
+Elegi esta libreria ya que habia utilizado bootstrap para otros proyectos y me fue familia implementar sus componentes, ayudando tambien a que sea responsive.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +76,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+

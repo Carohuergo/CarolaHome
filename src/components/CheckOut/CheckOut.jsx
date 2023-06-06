@@ -1,3 +1,4 @@
+import "./CheckOut.css"
 import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
 import { Timestamp, writeBatch, collection, getDocs, query, where, documentId, addDoc } from "firebase/firestore"
@@ -20,7 +21,7 @@ export const CheckOut = () => {
                     name, phone, email
                 },
                 items: cart,
-                total: total,
+                total: total(),
                 date: Timestamp.fromDate(new Date())
             }
             const batch = writeBatch(db)
@@ -67,15 +68,19 @@ export const CheckOut = () => {
         }
     }
     if (loading) {
-        return <h1> Se esta generando su orden..</h1>
+        return <h1  className="generarOrden"> Estamos verificando la compra...</h1>
     }
 
     if (orderId) {
-        return <h1>El id de su orden es: {orderId}</h1>
+        return <>
+            <h1 className="generarOrden">¡Compra confirmada!</h1>
+            <h2 className="generarOrden">El id de su orden es: {orderId}</h2>
+        </>
+        
     }
 
     return (
-        <div>
+        <div className="formularioContenedor">
             <CheckOutForm onConfirm={createOrder} />
         </div>
     )

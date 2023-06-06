@@ -1,0 +1,10 @@
+.formularioContenedor {
+    display:flex;
+    justify-content:center
+}
+.generarOrden{
+    text-align: center;
+    font-family:'Rubik', sans-serif;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}

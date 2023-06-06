@@ -54,3 +54,17 @@
         width: 200px;
       }
     }
+
+    @media (max-width: 5500px) {
+      .navBarStyle {
+        font-size: 8px;
+      }
+      .ButtonStyle {
+        font-size: 8px;
+        border-radius: 1px ;
+      }
+      .logoStyle {
+        height: 200px;
+        width: 200px;
+      }
+    }

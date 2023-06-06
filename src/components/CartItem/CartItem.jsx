@@ -13,7 +13,7 @@ export const CartItem = ({ id, name, precio, quantity,img}) => {
         <div>
             <Card className="cartStyle">
                 <Card.Body>
-                    <Card.Title>{name}</Card.Title>
+                    <Card.Title className="tituloStyle">{name}</Card.Title>
                     <Container>
                         <Row className="rowStyle">
                             <Col>
@@ -21,8 +21,9 @@ export const CartItem = ({ id, name, precio, quantity,img}) => {
                             </Col>
                             <Col>
                                 <Row >
-                                    <p> Total: ${(precio*quantity)}</p>
-                                    <p> Cantidad: {quantity}</p>
+                                    <p className="textoCard"> Precio x unidad: ${precio}</p>
+                                    <p className="textoCard"> Cantidad: {quantity}</p>
+                                    <p className="textoCard"> Total: ${(precio*quantity)}</p>
                                     <Button variant="light" size="sm" className="buttonRemover" onClick={() => removeItem(id)}>Eliminar</Button>
                                 </Row>
                             </Col>

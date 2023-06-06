@@ -29,9 +29,9 @@ const NavBar = () => {
                 <Link to="/productos/iluminacion" className="ButtonStyle">
                     Iluminacion
                 </Link>
-                <Link className="ButtonStyle" style={{ marginLeft: 19, border: 10 }}>
-                    <CardWidget />
-                </Link>
+
+                <CardWidget />
+
 
             </div>
 
